@@ -1,5 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* estableciendo valores generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* estableciendo la tipografia del archivo */
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CONTENIDO */
+
+/* estilizando el contenido en general */
+
+.log-in_welcome {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.log-in_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1.3;
+
+}
+
+.information_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-image: url('img/img_back.jpg');
+  background-size: cover;
+}
+
+/* div: log-in_container */
+
+/* estilizando el logo */
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo .logo_img{
+  width: 60px;
+  margin: 0 12px;
+}
+
+.logo .logo_text{
+  font-size: 22px;
+  color: #222;
+  font-weight: bold;
+}
+
+/* estilizando el contenido */
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1{
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+.content .text_welcome{
+  font-size: 20px;
+}
+
+
+/* estilizando el button de la etiqueta content */
+.btn_google{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 90%;
+  padding: 8px 0;
+  margin: 15px 0;
+  transition:  background-color, 100ms ease;
+}
+
+.btn_google:hover{
+  background-color: #99999942;
+}
+
+.icon_google{
+  width: 25px;
+  margin-right: 15px;
+}
+
+.btn_google .text_login{
+  font-size: 18px;
+}
+
+/* estilizando las lineas del contenido */
+
+.lines {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.lines hr {
+  flex-grow: 1;
+  height: 1px;
+  width: 120px;
+  margin: 0 15px;
+  border: none;
+  background-color: #999999;
+}
+
+/* estilizando la etiqueta form_content */
+.form_container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  color: #333;
+  font-size: 18px;
+}
+
+input{
+  padding: 8px 0;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #99999965;
+  outline: none;
+  transition: border-color, 300ms ease;
+}
+
+input:focus{
+  border-color: #999;
+}
+
+.divisor_checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.checkbox_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox_container p{
+  margin: 0 8px;
+}
+
+.btn_log-in{
+ padding: 8px 50px;
+ margin: 8px 0;
+ border-radius: 5px;
+ border: 1px solid #333;
+ background-color: #222;
+ color: #f9f9f9;
+ font-size: 15px;
+ transition:  background-color, 200ms ease;
+}
+
+.btn_log-in:hover{
+  background-color: #333333f5;
+}
+
+.text_sign_up{
+  color: #555;
+  margin: 10px 0;
+}
+
+.link_sign_up{
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.link_sign_up:hover{
+  color: #111111b4;
+}
+
+/* information_container */
+
+.personal_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #55555560;
+  width: 90%;
+  padding: 30px 0;
+  border-radius: 30px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+}
+
+
+.personal_container h2{
+  width: 70%;
+  text-align: center;
+  color: #999;
+}
+
+.name{
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color, 100ms ease;
+  color: #f9f9f9;
+}
+
+.name:hover{
+  color: #f9f9f996;
+}
+
+.dates_personal .dates{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+  margin: 4px 0;
+  color: #f9f9f9;
+}
+
+.column_div-information{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* estilizando los icons de la etiqueta column_div-information */
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars .star{
+  font-size: 15px;
+  color: #f9f9f9;
+}
+
+.arrows .arrow{
+  font-size: 45px;
+  color: #f9f9f9;
+  margin: 15px 10px;
+  transition: color, 100ms ease;
+}
+
+.arrows .arrow:hover{
+  color: #f9f9f996;
+}
+
